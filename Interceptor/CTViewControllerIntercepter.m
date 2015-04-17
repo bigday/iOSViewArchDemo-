@@ -1,5 +1,5 @@
 //
-//  Interceptor.m
+//  CTViewControllerIntercepter.m
 //  Interceptor
 //
 //  Created by casa on 4/17/15.
@@ -58,14 +58,16 @@
  
     所以在你原来的架构中，大部分封装UIViewController的基类或者其他的什么基类，都可以使用这种方法让这些基类消失。
  */
-#pragma mark - private methods
+#pragma mark - fake methods
 - (void)loadView:(UIViewController *)viewController
 {
+    /* 你可以使用这个方法进行打日志，初始化基础业务相关的内容 */
     NSLog(@"[%@ loadView]", [viewController class]);
 }
 
 - (void)viewWillAppear:(BOOL)animated viewController:(UIViewController *)viewController
 {
+    /* 你可以使用这个方法进行打日志，初始化基础业务相关的内容 */
     NSLog(@"[%@ viewWillAppear:%@]", [viewController class], animated ? @"YES" : @"NO");
 }
 

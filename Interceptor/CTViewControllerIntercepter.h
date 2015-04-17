@@ -1,5 +1,5 @@
 //
-//  Interceptor.h
+//  CTViewControllerIntercepter.h
 //  Interceptor
 //
 //  Created by casa on 4/17/15.
