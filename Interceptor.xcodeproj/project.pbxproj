@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		170B35BC1B174D1400D43DAC /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 170B35BB1B174D1400D43DAC /* Model.m */; };
 		3256720B34694288B919B2BC /* libPods-Interceptor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4777C991470441C6AF91432F /* libPods-Interceptor.a */; };
 		4A95186F1AE0C93F00920CC7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A95186E1AE0C93F00920CC7 /* main.m */; };
 		4A9518721AE0C93F00920CC7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A9518711AE0C93F00920CC7 /* AppDelegate.m */; };
@@ -29,6 +30,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		170B35BA1B174D1400D43DAC /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		170B35BB1B174D1400D43DAC /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Model.m; sourceTree = "<group>"; };
+		2BE1ACA157A92775F362B3A3 /* Pods-Interceptor.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Interceptor.release.xcconfig"; path = "Pods/Target Support Files/Pods-Interceptor/Pods-Interceptor.release.xcconfig"; sourceTree = "<group>"; };
 		4777C991470441C6AF91432F /* libPods-Interceptor.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Interceptor.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A9518691AE0C93F00920CC7 /* Interceptor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Interceptor.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A95186D1AE0C93F00920CC7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -45,7 +49,7 @@
 		4A9518881AE0C93F00920CC7 /* InterceptorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InterceptorTests.m; sourceTree = "<group>"; };
 		4A9518921AE0D50000920CC7 /* CTViewControllerIntercepter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTViewControllerIntercepter.h; sourceTree = "<group>"; };
 		4A9518931AE0D50000920CC7 /* CTViewControllerIntercepter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTViewControllerIntercepter.m; sourceTree = "<group>"; };
-		8D854E331ADE4966B91137EB /* Pods-Interceptor.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Interceptor.xcconfig"; path = "Pods/Pods-Interceptor.xcconfig"; sourceTree = "<group>"; };
+		CBF5A67F7484EC1C721AA154 /* Pods-Interceptor.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Interceptor.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Interceptor/Pods-Interceptor.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,14 +71,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		35AF3D0D63066C3F1D1B23FB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CBF5A67F7484EC1C721AA154 /* Pods-Interceptor.debug.xcconfig */,
+				2BE1ACA157A92775F362B3A3 /* Pods-Interceptor.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		4A9518601AE0C93F00920CC7 = {
 			isa = PBXGroup;
 			children = (
 				4A95186B1AE0C93F00920CC7 /* Interceptor */,
 				4A9518851AE0C93F00920CC7 /* InterceptorTests */,
 				4A95186A1AE0C93F00920CC7 /* Products */,
-				8D854E331ADE4966B91137EB /* Pods-Interceptor.xcconfig */,
 				9EEC11E73EC7412684AE78CE /* Frameworks */,
+				35AF3D0D63066C3F1D1B23FB /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -94,6 +107,8 @@
 				4A9518711AE0C93F00920CC7 /* AppDelegate.m */,
 				4A9518731AE0C93F00920CC7 /* ViewController.h */,
 				4A9518741AE0C93F00920CC7 /* ViewController.m */,
+				170B35BA1B174D1400D43DAC /* Model.h */,
+				170B35BB1B174D1400D43DAC /* Model.m */,
 				4A9518921AE0D50000920CC7 /* CTViewControllerIntercepter.h */,
 				4A9518931AE0D50000920CC7 /* CTViewControllerIntercepter.m */,
 				4A9518761AE0C93F00920CC7 /* Main.storyboard */,
@@ -263,7 +278,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-Interceptor-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Interceptor/Pods-Interceptor-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -277,6 +292,7 @@
 				4A9518721AE0C93F00920CC7 /* AppDelegate.m in Sources */,
 				4A95186F1AE0C93F00920CC7 /* main.m in Sources */,
 				4A9518941AE0D50000920CC7 /* CTViewControllerIntercepter.m in Sources */,
+				170B35BC1B174D1400D43DAC /* Model.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -400,7 +416,7 @@
 		};
 		4A95188D1AE0C93F00920CC7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8D854E331ADE4966B91137EB /* Pods-Interceptor.xcconfig */;
+			baseConfigurationReference = CBF5A67F7484EC1C721AA154 /* Pods-Interceptor.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Interceptor/Info.plist;
@@ -411,7 +427,7 @@
 		};
 		4A95188E1AE0C93F00920CC7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8D854E331ADE4966B91137EB /* Pods-Interceptor.xcconfig */;
+			baseConfigurationReference = 2BE1ACA157A92775F362B3A3 /* Pods-Interceptor.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = Interceptor/Info.plist;
